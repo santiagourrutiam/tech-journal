@@ -1,4 +1,4 @@
 ---
 title: "Primer Poryecto"
-date: YYYY-MM-DD
+date: 2024-08-02
 ---
