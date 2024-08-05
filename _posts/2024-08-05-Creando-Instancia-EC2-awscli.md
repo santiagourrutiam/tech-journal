@@ -32,15 +32,21 @@ En este primer laboratorio voy a compartir los pasos necesarios para crear una i
 Ahora con tu cuenta configurada para aws-cli comenzaremos a preparar todo lo necesario para iniciar una instancia EC2 desde la CLI.
 
 # Obteniendo datos necesarios para ejecutar instrucciones
-1) Arrancamos con el comando 
+1) Arrancamos con el comando
+
 `aws ec2 describe-vpcs`
 
-El campo "VpcId" no indicara este valor
+El campo "VpcId" no indicara este valor.
 En mi caso este valor corresponde a "vpc-0662e736559f90bda".
 
-2) Ahora hacemos algo similar para obtener el SubnetId, corremos **aws describe-subnets** y copiamos el valor de "SubnetId", en mi caso:subnet-0cbffd6431141df9a
+2) Ahora hacemos algo similar para obtener el SubnetId, corremos 
 
-VPC/Subnet IDs: 
+`aws describe-subnets` 
+
+y copiamos el valor de "SubnetId", en mi caso:subnet-0cbffd6431141df9a
+
+**VPC/Subnet IDs**
+
 vpc-0662e736559f90bda
 subnet-0cbffd6431141df9a
 
@@ -87,13 +93,17 @@ aws ec2 authorize-security-group-ingress \
 `aws ec2 create-key-pair --key-name demo-key --query 'KeyMaterial' --output text > ~/.ssh/demo-key`
 
 # En resumen  
-Tenemos los siguientes valores que utilizaremos en el paso final:
+Tenemos los siguientes valores que utilizaremos en el paso final (***Recuerda siempre reemplazar estos valores con los que obtuviste de tu cuenta***):
 
-VPC ID: vpc-0662e736559f90bda
-Subnet ID: subnet-0cbffd6431141df9a
-AMI ID: ami-03972092c42e8c0ca
-Security Group ID: sg-03b2d8248465661a5
-Key name: demo-key
+- VPC ID: vpc-0662e736559f90bda
+
+- Subnet ID: subnet-0cbffd6431141df9a
+
+- AMI ID: ami-03972092c42e8c0ca
+
+- Security Group ID: sg-03b2d8248465661a5
+
+- Key name: demo-key
 
  
 ***
