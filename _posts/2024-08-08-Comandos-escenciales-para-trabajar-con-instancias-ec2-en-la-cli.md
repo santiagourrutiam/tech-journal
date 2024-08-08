@@ -1,7 +1,6 @@
 ---
 title: Comandos Escenciales para trabar con instancias EC2 via AWS CLI
 date: 2028-08-08
-category: aws labs
 ---
 
 1. **Listing EC2 Instances**:
