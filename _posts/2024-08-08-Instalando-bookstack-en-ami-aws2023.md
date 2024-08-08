@@ -1,6 +1,8 @@
 ---
 title: Instalando-bookstack-en-AMI-AWS2023
+layout: post
 date: 2024-08-08
+categories: AWS-labs
 ---
 
 #Arrancando la instancia desde la Cli:

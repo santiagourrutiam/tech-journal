@@ -1,7 +1,7 @@
 ---
 title: Conectandome a maquina Ubuntu (en aws) via RDP
 date: 2024-08-07
-category: AWS-labs
+categories: AWS-labs
 ---
 
 #1.- Lanzando instancia EC2.
