@@ -69,7 +69,7 @@ sudo apt install remmina remmina-plugin-rdp
 
 - En "Nombre de servidor", introduzca la dirección IP pública de su instancia AWS Ubuntu.
 
-![Image](/img/public-ip.png)
+![Image](/assets/img/public-ip.png)
 En mi caso es la direccion 3.84.174.142
 
 
